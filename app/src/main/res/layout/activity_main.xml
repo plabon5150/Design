@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:radius="3"
+        android:src="@drawable/images" />
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:gravity="center"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent!"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flawless victory."
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/dimGray"
+        android:layout_alignParentBottom="true">
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:inputType="text"
+            android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/thuRadioBtn"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:scaleY="1.3"
+            android:scaleX="1.3"
+            android:drawableTop="@drawable/custom_radio_search_location"
+            android:text="Thu"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:gravity="right"/>
+            <RadioButton
+                android:id="@+id/friRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Fri"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+
+            <RadioButton
+                android:id="@+id/satRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Sat"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+
+            <RadioButton
+                android:id="@+id/sunRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Sun"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+
+            <RadioButton
+                android:id="@+id/monRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Mon"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+            <RadioButton
+                android:id="@+id/tueRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Tue"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+
+            <RadioButton
+                android:id="@+id/todayRadioBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:scaleY="1.3"
+                android:scaleX="1.3"
+                android:drawableTop="@drawable/custom_radio_search_location"
+                android:text="Today"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:gravity="right"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
